@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            .list-item {
+                color:red;
+            }
+         </style>
+    </head>
+    <body>
+    <h1>About Me</h1>
+
+<ul>
+
+    <li>Nickname: <span id="nickname"></span>
+
+     <li>Favorites:  <span id="favorites"></span>
+
+      <li>Hometown: <span id="hometown"></span>
+
+  </ul>
+<div id="picture">
+
+</div>
+</body>
+<script>
+    document.body.style = "font-family: Arial, sans-serif";
+    document.getElementById("nickname").innerText = "AES";
+    document.getElementById("favorites").innerText = "Food";
+    document.getElementById("hometown").innerText = "Memphis";
+    function addClasses(elem){
+            elem.classList.add("list-item");
+    }
+    document.querySelectorAll("li").forEach(addClasses);
+    document.body.innerHTML += " <img src ='https://scontent.fmem1-2.fna.fbcdn.net/v/t39.30808-6/264083439_10226860882730328_4880617521904895207_n.jpg?_nc_cat=108&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=7y-Q7Tvdm9kAX8XmCiI&_nc_ht=scontent.fmem1-2.fna&oh=00_AT-lioz7heChfiziKj3wJQluTGjXb9bICEudzmDvrbXoKQ&oe=628793FE'/>";
+</script>
+</html>
